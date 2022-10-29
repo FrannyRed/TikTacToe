@@ -18,7 +18,7 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
 
             # The current player will pick their next move on the board by choosing a number on the board
             selection = int(input('Select Location : '))  # TODO add input validation
-            # This is a git test
+            print('I made a change')
             game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece
             print('# # # # # # #\n'  # Print an updated board
                   '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\n'
