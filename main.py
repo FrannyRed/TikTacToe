@@ -1,18 +1,14 @@
 # Define the game function
 
-def game_board(array=[]):
-    print('# # # # # # #\n'
-          '#', array[0], '|', array[1], '|', array[2], '#\n'
-          '# - - - - - #\n'
-          '#', array[3], '|', array[4], '|', array[5], '#\n'
-          '# - - - - - #\n'
-          '#', array[6], '|', array[7], '|', array[8], '#\n'
-          '# # # # # # #\n')
-
-
 def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 7, 8, 9]):
     # Print the game board
-    game_board(game_array)
+    print('# # # # # # #\n'
+          '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\n'
+          '# - - - - - #\n'
+          '#', game_array[3], '|', game_array[4], '|', game_array[5], '#\n'
+          '# - - - - - #\n'
+          '#', game_array[6], '|', game_array[7], '|', game_array[8], '#\n'
+          '# # # # # # #\n')
 
     # The while statement will keep playing the game until the turns are up
     while turns < 9:
@@ -22,8 +18,15 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
 
             # The current player will pick their next move on the board by choosing a number on the board
             selection = int(input('Select Location : '))  # TODO add input validation
+            # This is a git test
             game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece
-            game_board(game_array)  # Print the game board with the updated changes
+            print('# # # # # # #\n'  # Print an updated board
+                  '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\n'
+                  '# - - - - - #\n'
+                  '#', game_array[3], '|', game_array[4], '|', game_array[5], '#\n'
+                  '# - - - - - #\n'
+                  '#', game_array[6], '|', game_array[7], '|', game_array[8], '#\n'
+                  '# # # # # # #\n')
 
             # This next section will check to see if a player won
 
@@ -36,7 +39,7 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
             elif game_array[6] == game_array[7] == game_array[8]:  # Check row 3
                 print('Player', game_pieces.index(game_array[6]) + 1, 'wins!!!')
                 return
-            elif game_array[0] == game_array[3] == game_array[6]:  # Check column 1
+            elif game_array[0] == game_array[3] == game_array[6]: # Check column 1
                 print('Player', game_pieces.index(game_array[0]) + 1, 'wins!!!')
                 return
             elif game_array[1] == game_array[4] == game_array[7]:  # Check column 2
