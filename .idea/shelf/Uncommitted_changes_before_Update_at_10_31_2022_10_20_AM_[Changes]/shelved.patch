@@ -1,0 +1,106 @@
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ /dev/null	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
+@@ -1,8 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ /dev/null	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/TikTacToe.iml" filepath="$PROJECT_DIR$/.idea/TikTacToe.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ /dev/null	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
+@@ -1,4 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (TikTacToe)" project-jdk-type="Python SDK" />
+-</project>
+\ No newline at end of file
+Index: .idea/TikTacToe.iml
+===================================================================
+diff --git a/.idea/TikTacToe.iml b/.idea/TikTacToe.iml
+deleted file mode 100644
+--- a/.idea/TikTacToe.iml	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ /dev/null	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="PYTHON_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/profiles_settings.xml	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ /dev/null	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ /dev/null	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Define the game function\r\n\r\ndef game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 7, 8, 9]):\r\n    # Print the game board\r\n    print('# # # # # # #\\n'\r\n          '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\\n'\r\n          '# - - - - - #\\n'\r\n          '#', game_array[3], '|', game_array[4], '|', game_array[5], '#\\n'\r\n          '# - - - - - #\\n'\r\n          '#', game_array[6], '|', game_array[7], '|', game_array[8], '#\\n'\r\n          '# # # # # # #\\n')\r\n\r\n    # The while statement will keep playing the game until the turns are up\r\n    while turns < 9:\r\n        # The for loop alternates between both players\r\n        for i in range(0, 2):\r\n            print('Start turn', turns + 1, ': Player', i + 1, '!')\r\n\r\n            # The current player will pick their next move on the board by choosing a number on the board\r\n            selection = int(input('Select Location : '))  # TODO add input validation\r\n            print('I made a change')\r\n            game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece\r\n            print('# # # # # # #\\n'  # Print an updated board\r\n                  '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\\n'\r\n                  '# - - - - - #\\n'\r\n                  '#', game_array[3], '|', game_array[4], '|', game_array[5], '#\\n'\r\n                  '# - - - - - #\\n'\r\n                  '#', game_array[6], '|', game_array[7], '|', game_array[8], '#\\n'\r\n                  '# # # # # # #\\n')\r\n\r\n            # This next section will check to see if a player won\r\n\r\n            if game_array[0] == game_array[1] == game_array[2]:  # Check row 1\r\n                print('Player', game_pieces.index(game_array[0]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[3] == game_array[4] == game_array[5]:  # Check row 2\r\n                print('Player', game_pieces.index(game_array[3]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[6] == game_array[7] == game_array[8]:  # Check row 3\r\n                print('Player', game_pieces.index(game_array[6]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[0] == game_array[3] == game_array[6]: # Check column 1\r\n                print('Player', game_pieces.index(game_array[0]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[1] == game_array[4] == game_array[7]:  # Check column 2\r\n                print('Player', game_pieces.index(game_array[1]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[2] == game_array[5] == game_array[8]:  # Check column 3\r\n                print('Player', game_pieces.index(game_array[2]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[0] == game_array[4] == game_array[8]:  # Check diagonal top left to bottom right\r\n                print('Player', game_pieces.index(game_array[0]) + 1, 'wins!!!')\r\n                return\r\n            elif game_array[2] == game_array[4] == game_array[6]:  # Check diagonal top right to bottom left\r\n                print('Player', game_pieces.index(game_array[2]) + 1, 'wins!!!')\r\n                return\r\n            else:  # If no player one, increment the turn counter and continue the game\r\n                turns += 1\r\n\r\n\r\n# Begin program\r\n\r\n# Print welcome statement\r\nprint('''\r\nWelcome to Tik Tac Toe!\r\nPlayer 1 will be \"X\"\r\nPlayer 2 will be \"O\"\r\nPick a location on the board to place your pieces!\r\n''')\r\n\r\n# Start the game by calling the function\r\ngame_machine()\r\n\r\n# Print goodbye statement\r\nprint('Thank you for playing!')\r\n\r\n# End program\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 593924c2f157f95cda7c4cea98a3361a323def88)
++++ b/main.py	(date 1667225911218)
+@@ -18,7 +18,7 @@
+ 
+             # The current player will pick their next move on the board by choosing a number on the board
+             selection = int(input('Select Location : '))  # TODO add input validation
+-            print('I made a change')
++            # This is a git test
+             game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece
+             print('# # # # # # #\n'  # Print an updated board
+                   '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\n'
