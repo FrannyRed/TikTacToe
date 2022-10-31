@@ -1,14 +1,18 @@
 # Define the game function
 
+def game_board(array=[]):
+    print('# # # # # # #\n'
+          '#', array[0], '|', array[1], '|', array[2], '#\n'
+          '# - - - - - #\n'
+          '#', array[3], '|', array[4], '|', array[5], '#\n'
+          '# - - - - - #\n'
+          '#', array[6], '|', array[7], '|', array[8], '#\n'
+          '# # # # # # #\n')
+
+
 def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 7, 8, 9]):
     # Print the game board
-    print('# # # # # # #\n'
-          '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\n'
-          '# - - - - - #\n'
-          '#', game_array[3], '|', game_array[4], '|', game_array[5], '#\n'
-          '# - - - - - #\n'
-          '#', game_array[6], '|', game_array[7], '|', game_array[8], '#\n'
-          '# # # # # # #\n')
+    game_board(game_array)
 
     # The while statement will keep playing the game until the turns are up
     while turns < 9:
@@ -20,13 +24,7 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
             selection = int(input('Select Location : '))  # TODO add input validation
             # This is a git test
             game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece
-            print('# # # # # # #\n'  # Print an updated board
-                  '#', game_array[0], '|', game_array[1], '|', game_array[2], '#\n'
-                  '# - - - - - #\n'
-                  '#', game_array[3], '|', game_array[4], '|', game_array[5], '#\n'
-                  '# - - - - - #\n'
-                  '#', game_array[6], '|', game_array[7], '|', game_array[8], '#\n'
-                  '# # # # # # #\n')
+            game_board(game_array)
 
             # This next section will check to see if a player won
 
