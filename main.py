@@ -22,9 +22,8 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
 
             # The current player will pick their next move on the board by choosing a number on the board
             selection = int(input('Select Location : '))  # TODO add input validation
-            # This is a git test
             game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece
-            game_board(game_array)
+            game_board(game_array)  # Print the game board with the updated changes
 
             # This next section will check to see if a player won
 
@@ -37,7 +36,7 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
             elif game_array[6] == game_array[7] == game_array[8]:  # Check row 3
                 print('Player', game_pieces.index(game_array[6]) + 1, 'wins!!!')
                 return
-            elif game_array[0] == game_array[3] == game_array[6]: # Check column 1
+            elif game_array[0] == game_array[3] == game_array[6]:  # Check column 1
                 print('Player', game_pieces.index(game_array[0]) + 1, 'wins!!!')
                 return
             elif game_array[1] == game_array[4] == game_array[7]:  # Check column 2
