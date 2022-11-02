@@ -21,10 +21,17 @@ def game_machine(turns=0, game_pieces=['X', 'O'], game_array=[1, 2, 3, 4, 5, 6, 
             print('Start turn', turns + 1, ': Player', i + 1, '!')
 
             # The current player will pick their next move on the board by choosing a number on the board
-            selection = int(input('Select Location : '))  # TODO add input validation
-            print('I made a change')
-            game_array[selection - 1] = game_pieces[i]  # The board space is replaced with the players game piece
-            game_board(game_array)  # Print the changes to game board
+            while True:
+                selection = input('Select Location : ')
+                if selection.isdigit():
+                    if 0 < int(selection) < 10:
+                        game_array[int(selection) - 1] = game_pieces[i]  # The board space is replaced with the players game piece
+                        game_board(game_array)  # Print the changes to game board
+                        break
+                    else:
+                        print('Please select a number on the game board')
+                else:
+                    print('Please select a number')
 
             # This next section will check to see if a player won
 

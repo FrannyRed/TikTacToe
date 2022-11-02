@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dd54001-b292-4fdd-b964-97173bb5887a" name="Changes" comment="Added a function to print the game board instead of having multiple instances of it in the code.">
+    <list default="true" id="1dd54001-b292-4fdd-b964-97173bb5887a" name="Changes" comment="Changed the game board instanceses into a function.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Master" />
+        <entry key="$PROJECT_DIR$" value="Test1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,6 +86,7 @@
       <workItem from="1667055127012" duration="1130000" />
       <workItem from="1667223067297" duration="3692000" />
       <workItem from="1667258960938" duration="1708000" />
+      <workItem from="1667350074514" duration="1180000" />
     </task>
     <task id="LOCAL-00001" summary="This is the master file">
       <created>1667055368528</created>
@@ -135,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667261756228</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed the game board instanceses into a function.">
+      <created>1667262981083</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667262981083</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +185,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="program_changes" />
+                        <option value="origin/Workspace" />
                       </list>
                     </value>
                   </entry>
@@ -233,10 +242,11 @@
     <MESSAGE value="This is the py file where the game is kept" />
     <MESSAGE value="Added a function to print the game board instead of having multiple instances of it in the code." />
     <MESSAGE value="This is a test" />
-    <option name="LAST_COMMIT_MESSAGE" value="This is a test" />
+    <MESSAGE value="Changed the game board instanceses into a function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the game board instanceses into a function." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TikTacToe$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1667007422740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/TikTacToe$main.coverage" NAME="main Coverage Results" MODIFIED="1667262637779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TikTacToe$main.coverage" NAME="main Coverage Results" MODIFIED="1667351150729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
