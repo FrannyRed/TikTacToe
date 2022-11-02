@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dd54001-b292-4fdd-b964-97173bb5887a" name="Changes" comment="Added some input validation on lines 24 to 34. Tested the function of it, and it seems to work well.">
+    <list default="true" id="1dd54001-b292-4fdd-b964-97173bb5887a" name="Changes" comment="Added and rearranged comments.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,8 @@
       <workItem from="1667055127012" duration="1130000" />
       <workItem from="1667223067297" duration="3692000" />
       <workItem from="1667258960938" duration="1708000" />
-      <workItem from="1667350074514" duration="1828000" />
+      <workItem from="1667350074514" duration="2614000" />
+      <workItem from="1667400952972" duration="2114000" />
     </task>
     <task id="LOCAL-00001" summary="This is the master file">
       <created>1667055368528</created>
@@ -150,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667351312595</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added and rearranged comments.">
+      <created>1667351938989</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667351938989</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,10 +259,11 @@
     <MESSAGE value="This is a test" />
     <MESSAGE value="Changed the game board instanceses into a function." />
     <MESSAGE value="Added some input validation on lines 24 to 34. Tested the function of it, and it seems to work well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some input validation on lines 24 to 34. Tested the function of it, and it seems to work well." />
+    <MESSAGE value="Added and rearranged comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added and rearranged comments." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TikTacToe$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1667007422740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/TikTacToe$main.coverage" NAME="main Coverage Results" MODIFIED="1667351353283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TikTacToe$main.coverage" NAME="main Coverage Results" MODIFIED="1667404414303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
